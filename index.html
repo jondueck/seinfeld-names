@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Seinfeld Name Generator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Seinfeld Name Generator</h1>
+  </header>
+  <main>
+    <div id="character"></div>
+    <input type="button" value="Reload" onClick="window.location.href=window.location.href">
+  </main>
+  <script>
+    (function() {
+      var characters = [
+        { name: "Jerry Seinfeld" },
+        { name: "Cosmo Kramer" },
+        { name: "Kenny Bania" },
+        { name: "Elaine Benes" },
+        { name: "Susan Ross" },
+        { name: "Tim Whatley" },
+        { name: "Barbara Kramer" },
+        { name: "Russell Dalrymple" },
+        { name: "Rachel Goldstein" },
+        { name: "David Puddy" },
+        { name: "Jack Klompus" },
+        { name: "Jackie Chiles" },
+        { name: "Gary Fogel" },
+        { name: "Alec Berg" },
+        { name: "Babu Bhatt" },
+        { name: "Beth Luchner" },
+        { name: "Bob Cobb" },
+        { name: "Dana Foley" },
+        { name: "Donald Sanger" },
+        { name: "Earl Haffler" },
+        { name: "Franklin Delano Romanowski" },
+        { name: "Izzy Mandelbaum" },
+        { name: "Jake Jarmel" },
+        { name: "Joe Mayo" },
+        { name: "Joe Temple" },
+        { name: "Joey Zanfino" },
+        { name: "Lindsay Enright" },
+        { name: "Lloyd Braun" },
+        { name: "Joe Bookman" },
+        { name: "Mabel Choate" },
+        { name: "Mike Moffit" },
+        { name: "Mel Sanger" },
+        { name: "Rebecca DeMornay" },
+        { name: "Remy Temple" },
+        { name: "Sal Bass" },
+        { name: "Sally Weaver" },
+        { name: "Scott Drake" },
+        { name: "Sid Farkus" },
+        { name: "Sidra Holland" },
+        { name: "Sue Ellen Mischke" },
+        { name: "Tia Van Camp" },
+        { name: "Tina Robbins" },
+        { name: "Wyck Thayer" },
+        { name: "Bob Sacamano" },
+        { name: "Jay Riemenschneider" },
+        { name: "Corky Ramirez" },
+        { name: "Len Nicademo" },
+        { name: "Sharon Besser" },
+        { name: "Jerry Persheck" },
+        { name: "Ed Roidlick" },
+        { name: "Harry Fleming" },
+        { name: "Marvin Kessler" },
+        { name: "Patty Lawrence" },
+
+        // Eduardo Corrochio
+        // Whitey Fisk
+        // Art Vandelay
+        // Kel Varnsen
+        // H.E. Pennypacker
+        // Martin van Nostrand
+        // Peter van Nostrand
+        // Wanda Pepper
+        // Dylan Murphy
+        // Colin O’Brien
+        // Steven Snell
+
+      ];
+      var character = characters[Math.floor(Math.random() * characters.length)];
+      document.getElementById("character").innerHTML =
+        '<h2>' + character.name + '</h2>';
+    })();
+  </script>
+</body>
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+</html>
